@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<head>
+    <title>forms_tables web</title>
+    <h1 align="center">Registration Form</h1>
+</head>
+<body>
+    <!--form-->
+    <form  action="/test.php" method="get" align="center" >
+        <!--text-->
+        <div>
+            <label for="username"><strong>Student Name</strong> </label>
+            <input type="text" id="username" name="std-name" placeholder="yasmeen">
+        </div><br>
+        <!--date-->
+        <div>
+            <label for="DOB"><strong>Date of Birth</strong></label>
+            <input type="date" id="DOB" name="std-Birth">
+        </div><br>
+        <!--number-->
+        <div>
+            <label for="Wgh"><strong>Weight</strong></label>
+            <input type="number" id="Wgh" name="std-weight" min="0" max="100">
+        </div><br>
+        <div>
+         <!--radio--> 
+         <p><strong>What is your gender?</strong></p>  
+        <div>
+            <label for="GND-female">female</label>
+            <input type="radio" id="GND-female" name="std-gender" value="female">
+            <label for="GND-male">male</label>
+            <input type="radio" id="GND-male" name="std-gender" value="male">
+        </div><br>
+         </div>
+         <!--email-->
+        <div>
+            <label for="Eml"><strong>Email</strong></label>
+            <input type="email" id="Eml" name="std-email">
+        </div><br>
+        <!--tel-->
+        <div>
+            <label for="telnum"><strong>Phone Number</strong></label>
+            <input type="tel" id="telnum" name="std-phone">
+        </div><br>
+        <!--dropdown-->
+        <div>
+            <label for="POR"><strong>Place of Residence</strong></label>
+            <select id="POR" name="std-place">
+                <option value=" ">please choose country</option>
+                <option value="jordan">Jordan</option>
+                <option value="egypt">Egypt</option>
+                <option value="palestine">Palestine</option>
+                <option value="qatar">Qatar</option></select>
+        </div><br>
+        <!--text-->
+        <div>
+            <label for="std-color"><strong>Favorite Color</strong></label>
+            <input type="text" id="Col" name="std-color">
+        </div><br>
+        <!--file-->
+        <div>
+            <label for="stdcv"><strong>CV</strong></label>
+            <input type="file" id="stdcv" name="std-cv">
+        </div><br>
+        <!--checkbox-->
+        <div>
+            <label for="ch"><strong>Please check if we can contact you by email</strong></label>
+            <input type="checkbox" id="ch" name="std-CHB">
+        </div><br>
+        <!--textarea-->
+        <div>
+            <label for="bio"><strong>Please enter any additinal Information</strong></label><br>
+            <textarea id="bio" name="std-bio"></textarea>
+        </div><br>
+        <!--button-->
+        <button type="submit">submit form</button>
+
+    </form>
+
+    <hr>
+    
+    <!--table-->
+    <table align="center" cellspacing="5" style="border: 1px solid">
+        <caption>Students Information</caption>
+        <thead align="center">
+            <tr>
+                <th >Student Name</th>
+                <th >Date of Birth</th>
+                <th >Weight</th>
+                <th >Gender</th>
+                <th >Email</th>
+                <th >Phone Number</th>
+                <th >Place of Residence</th>
+                <th >Favorite Color</th>
+                <th >CV</th>
+                
+            </tr>
+           
+
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>Ahmad</td>
+                <td>7<sup>th</sup>Of Oct</td>
+                <td>70</td>
+                <td>male</td>
+                <td>Ahmadallozi@gmail.com</td>
+                <td>079845678</td>
+                <td>Amman</td>
+                <td>Red</td>
+                
+            </tr>
+            <tr>
+            <td>khaled</td>
+                <td>8<sup>th</sup>Of Oct</td>
+                <td>90</td>
+                <td>male</td>
+                <td>Khaledallozi@gmail.com</td>
+                <td>079899678</td>
+                <td>Amman</td>
+                <td>Green</td>
+            </tr>
+            <tr>
+                <td>Lara</td>
+                <td>8<sup>th</sup>Of Aug</td>
+                <td>50</td>
+                <td>female</td>
+                <td>Laraallozi@gmail.com</td>
+                <td>073499678</td>
+                <td>Amman</td>
+                <td>Black</td>
+            
+            </tr>
+
+        </tbody>
+
+
+    </table>
+</body>
+</html>
